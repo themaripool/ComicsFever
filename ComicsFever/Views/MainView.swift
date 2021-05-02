@@ -14,7 +14,12 @@ struct MainView: View {
                 ZStack {
                     Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)).edgesIgnoringSafeArea(.all)
                     VStack {
-                        Text("Hello world")
+                        
+                        homeElement()
+                        
+                        Spacer()
+                        
+                        homeElement()
                     }
                     .toolbar {
                         ToolbarItem(placement: .principal) {
@@ -30,6 +35,17 @@ struct MainView: View {
             }
             
         }
+    }
+    
+    //MARK: Home elements
+    fileprivate func homeElement() -> some View {
+        return VStack(alignment: .leading){
+            Text("Trending")
+                .foregroundColor(.gray)
+                .font(.title)
+                .fontWeight(.heavy)
+            CarouselComponentView()
+        }.padding(.all, 16)
     }
 }
 

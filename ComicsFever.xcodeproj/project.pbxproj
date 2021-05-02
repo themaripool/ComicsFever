@@ -11,6 +11,7 @@
 		0B39F765263F3C8C003BBCC3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39F764263F3C8C003BBCC3 /* MainView.swift */; };
 		0B39F767263F3C8E003BBCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39F766263F3C8E003BBCC3 /* Assets.xcassets */; };
 		0B39F76A263F3C8E003BBCC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39F769263F3C8E003BBCC3 /* Preview Assets.xcassets */; };
+		0B39F774263F49A5003BBCC3 /* CarouselComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0B39F766263F3C8E003BBCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B39F769263F3C8E003BBCC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B39F76B263F3C8E003BBCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselComponentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,9 @@
 		0B39F761263F3C8C003BBCC3 /* ComicsFever */ = {
 			isa = PBXGroup;
 			children = (
+				0B39F777263F49B9003BBCC3 /* Views */,
+				0B39F776263F49AC003BBCC3 /* Components */,
 				0B39F762263F3C8C003BBCC3 /* ComicsFeverApp.swift */,
-				0B39F764263F3C8C003BBCC3 /* MainView.swift */,
 				0B39F766263F3C8E003BBCC3 /* Assets.xcassets */,
 				0B39F76B263F3C8E003BBCC3 /* Info.plist */,
 				0B39F768263F3C8E003BBCC3 /* Preview Content */,
@@ -67,6 +70,22 @@
 				0B39F769263F3C8E003BBCC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B39F776263F49AC003BBCC3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0B39F777263F49B9003BBCC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B39F764263F3C8C003BBCC3 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				0B39F765263F3C8C003BBCC3 /* MainView.swift in Sources */,
 				0B39F763263F3C8C003BBCC3 /* ComicsFeverApp.swift in Sources */,
+				0B39F774263F49A5003BBCC3 /* CarouselComponentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
