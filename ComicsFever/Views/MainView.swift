@@ -16,11 +16,11 @@ struct MainView: View {
                         Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)).edgesIgnoringSafeArea(.all)
                         VStack {
                             
-                            homeElement()
+                            homeElement(category: "Em Alta")
                             
                             Spacer()
                             
-                            homeElement()
+                            homeElement(category: "Novos")
                         }
                         .toolbar {
                             ToolbarItem(placement: .principal) {
@@ -39,9 +39,9 @@ struct MainView: View {
     }
     
     //MARK: Home elements
-    fileprivate func homeElement() -> some View {
+    fileprivate func homeElement(category: String) -> some View {
         return VStack(alignment: .leading){
-            Text("Trending")
+            Text(category)
                 .foregroundColor(.gray)
                 .font(.title)
                 .fontWeight(.heavy)
