@@ -11,7 +11,7 @@ import SwiftUI
 struct ComicsFeverApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            HomeView()
         }
     }
 }
