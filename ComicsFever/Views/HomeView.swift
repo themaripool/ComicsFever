@@ -15,15 +15,20 @@ struct HomeView: View {
                 Image(systemName: "house")
                 Text("Home")
               }
-           Text("The content of the search view")
+           Text("The content of the search view") //searchView
              .tabItem {
                 Image(systemName: "magnifyingglass")
                 Text("Search")
               }
-            Text("The content of the 3 view")
+            Text("The content of the 3 view") //profileView
               .tabItem {
                  Image(systemName: "person")
                  Text("Profile?")
+               }
+            Text("The content of the configuration view") //Ajustes
+              .tabItem {
+                 Image(systemName: "gearshape.fill")
+                 Text("Ajustes")
                }
         }
     }

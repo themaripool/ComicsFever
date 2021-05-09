@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    var Trending = ["placeholder_1", "placeholder_2", "placeholder_3", "placeholder_4", "placeholder_5", "placeholder_6"]
+    var New = ["placeholder_3", "placeholder_6", "placeholder_5", "placeholder_1", "placeholder_4", "placeholder_2"]
+    
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
@@ -16,11 +19,11 @@ struct MainView: View {
                         Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)).edgesIgnoringSafeArea(.all)
                         VStack {
                             
-                            homeElement(category: "Em Alta")
+                            homeElement(category: "Em Alta", list: Trending)
                             
                             Spacer()
                             
-                            homeElement(category: "Novos")
+                            homeElement(category: "Novos", list: New)
                         }
                         .toolbar {
                             ToolbarItem(placement: .principal) {
@@ -39,14 +42,15 @@ struct MainView: View {
     }
     
     //MARK: Home elements
-    fileprivate func homeElement(category: String) -> some View {
+    fileprivate func homeElement(category: String, list:[String]) -> some View {
         return VStack(alignment: .leading){
             Text(category)
                 .foregroundColor(.gray)
                 .font(.title)
                 .fontWeight(.heavy)
-            CarouselComponentView()
-        }.padding(.all, 16)
+                .padding(.bottom, 8)
+            CarouselComponentView(list: list)
+        }.padding(.all, 8)
     }
 }
 
