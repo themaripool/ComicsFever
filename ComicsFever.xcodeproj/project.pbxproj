@@ -13,6 +13,7 @@
 		0B39F76A263F3C8E003BBCC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B39F769263F3C8E003BBCC3 /* Preview Assets.xcassets */; };
 		0B39F774263F49A5003BBCC3 /* CarouselComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */; };
 		0B8C36FF2640E56300CCB582 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C36FE2640E56300CCB582 /* DetailsView.swift */; };
+		0BCE4EAA2648112E00E0B2CC /* CategoryScrollComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE4EA92648112E00E0B2CC /* CategoryScrollComponent.swift */; };
 		0BFA5758263F879B005A019C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA5757263F879B005A019C /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0B39F76B263F3C8E003BBCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselComponentView.swift; sourceTree = "<group>"; };
 		0B8C36FE2640E56300CCB582 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		0BCE4EA92648112E00E0B2CC /* CategoryScrollComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollComponent.swift; sourceTree = "<group>"; };
 		0BFA5757263F879B005A019C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0B39F773263F49A5003BBCC3 /* CarouselComponentView.swift */,
+				0BCE4EA92648112E00E0B2CC /* CategoryScrollComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				0B39F765263F3C8C003BBCC3 /* MainView.swift in Sources */,
 				0B8C36FF2640E56300CCB582 /* DetailsView.swift in Sources */,
+				0BCE4EAA2648112E00E0B2CC /* CategoryScrollComponent.swift in Sources */,
 				0BFA5758263F879B005A019C /* HomeView.swift in Sources */,
 				0B39F763263F3C8C003BBCC3 /* ComicsFeverApp.swift in Sources */,
 				0B39F774263F49A5003BBCC3 /* CarouselComponentView.swift in Sources */,

@@ -18,7 +18,8 @@ struct DetailsView: View {
                     Image(imageName)
                         .resizable()
                         .padding(.horizontal, 8.0)
-                        .frame(width: 280, height: 380)
+                        .frame(width: 440, height: 450)
+                        .opacity(0.5)
                     
                     VStack{
                         HStack{
@@ -30,9 +31,9 @@ struct DetailsView: View {
                         
                         Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum libero at ex lacinia laoreet. Pellentesque faucibus purus imperdiet tincidunt dignissim. Pellentesque cursus, odio nec vehicula consequat, dui mi pellentesque ligula, in accumsan enim risus eu enim. Proin vitae lacinia felis. Cras sit amet urna venenatis, semper eros in, cursus ipsum. Aliquam euismod ullamcorper felis, a tempor sapien euismod in. Vestibulum eleifend quam eu tincidunt tincidunt. Phasellus odio velit, scelerisque in ex eu, cursus ullamcorper metus. Praesent dapibus luctus ex vel blandit. Cras eu mollis ligula, vel rutrum est. Nunc eu orci molestie, tincidunt mauris sit amet, porta tellus. In iaculis iaculis turpis, ut maximus quam pellentesque lacinia.")
                     }
-                    .padding([.top, .leading, .trailing], 16.0)
+                    .padding(.all, 16.0)
                 }
-            }
+            }.edgesIgnoringSafeArea(.all)
         }
     }
 }

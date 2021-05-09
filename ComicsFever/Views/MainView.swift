@@ -19,6 +19,8 @@ struct MainView: View {
                         Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)).edgesIgnoringSafeArea(.all)
                         VStack {
                             
+                            CategoryScrollComponent()
+                            
                             homeElement(category: "Em Alta", list: Trending)
                             
                             Spacer()
