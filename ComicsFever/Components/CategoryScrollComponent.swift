@@ -30,7 +30,7 @@ struct CategoryScrollComponent: View {
                                                 .size(width: 45, height: 45)
                                                 .offset(x: -2,y: -2)
                                                 .scale(1.5)
-                                                .stroke(Color.red, lineWidth: 4)
+                                                .stroke(Color("yellow"), lineWidth: 4)
                                         )
                             }
                             .padding(.horizontal, 4.0)

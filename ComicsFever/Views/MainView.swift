@@ -36,7 +36,7 @@ struct MainView: View {
                                 }
                             }
                         }
-                        .navigationBarItems(leading: Image(systemName: "heart.fill").foregroundColor(.gray), trailing: Image(systemName: "heart.fill").foregroundColor(.gray))
+                        .navigationBarItems(leading: Image(systemName: "heart.fill").foregroundColor(Color("red")), trailing: Image(systemName: "heart.fill").foregroundColor(Color("red")))
                     }
                 }
             }
@@ -46,11 +46,10 @@ struct MainView: View {
     //MARK: Home elements
     fileprivate func homeElement(category: String, list:[String]) -> some View {
         return VStack(alignment: .leading){
-            Text(category)
-                .foregroundColor(.gray)
+            Text(category).fontWeight(.light)
+                .foregroundColor(Color("black"))
                 .font(.title)
-                .fontWeight(.heavy)
-                .padding(.bottom, 8)
+                .padding([.bottom, .top], 8)
             CarouselComponentView(list: list)
         }.padding(.all, 8)
     }
